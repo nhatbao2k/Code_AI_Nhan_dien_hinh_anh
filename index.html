@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Home - Nhom1</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/resources/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/resources/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/resources/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/resources/favicons/site.webmanifest">
+    <link rel="mask-icon" href="/resources/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="/assets/favicon.ico">
+    <link rel="stylesheet" href="./src/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./style.css">
+
+
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+</head>
+
+<body id="page-top">
+    <div class="icon-bar">
+        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+        <a href="#" class="google"><i class="fa fa-google"></i></a>
+        <a href="./New folder (2)/to tinh/to tinh/index.html" class="linkedin"><i class="fa fa-linkedin"></i></a>
+        <a href="./New folder (2)/web/westeros/Westeros HTML/index.html" class="youtube"><i class="fa fa-youtube"></i></a>
+    </div>
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top" id="mainNav">
+        <div class="container"><a class="navbar-brand js-scroll-trigger" href="#page-top">Cloud Cpmputing Nhom1</a><button data-toggle="collapse" data-target="#navbarResponsive" class="navbar-toggler navbar-toggler-right" type="button" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-align-justify"></i></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">Start</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">Image</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
+                    <script>
+                    
+                    </script>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="masthead text-center text-white d-flex" style="background-image:url('assets/img/header.jpg');">
+        <div class="container my-auto">
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <h1 class="text-uppercase">ai IN IMAGE RECOGNITION</h1>
+                    <hr>
+                </div>
+            </div>
+            <div class="col-lg-8 mx-auto">
+                <p class="text-faded mb-5">We can help you know What is label images ?</p><a class="btn btn-primary btn-xl js-scroll-trigger" role="button" href="#about">Start now</a>
+            </div>
+        </div>
+    </header>
+    <section id="about" style="background-color: linen;" class="">
+        <!-- <div class="container">
+            <div class="row">
+                <div class="col offset-lg-8 mx-auto text-center">
+                    <h2 class="text-white section-heading">We've got what you need!</h2>
+                    <hr class="light my-4">
+                    <p class="text-faded mb-4">Bootstrap has everything you need to get your new website up and running in no time! All of the templates and themes are open source, free to download, and easy to use. No strings attached!</p><a class="btn btn-light btn-xl js-scroll-trigger" role="button" href="#services">Get Started!</a>
+                </div>
+            </div>
+        </div> -->
+        <center>
+            <div class="drop-zone">
+                <span id="im" class="drop-zone__prompt">Drop file here or click to upload</span>
+                <input type="file" name="myFile" onclick="uploadf()" class="drop-zone__input" id="img" />
+            </div>
+            <input id="smb" class="mt-3 btn btn-success" type="submit" onclick="myFunction()" value="Choose">
+            <p style="margin-top: 10px;">Or insert your link</p>
+            <input type="text" id="img_link" class="form-select">
+           
+            <input class="mt-3 btn btn-success" style="margin-top: 10px;" type="submit" onclick="run()" value="Choose" id="smb2">
+            <div class="container">
+                <table style="padding-left: 200px ;" class="table" id="data">
+                    <thead>
+                        <tr>
+                            <th scope="col">STT</th>
+                            <th scope="col">Label</th>
+                            <th scope="col">Prob</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+    
+                    </tbody>
+                </table>
+            </div>
+            <img src="./web_ai_last/loading.gif" alt="this slowpoke moves" id="load" style="display: none;" >
+        </center>
+        <img id="image" style="display: none;" width="100%" height="100%" src="" alt="" srcset="">
+        
+
+    <script src="./upImage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
+    <script src="https://unpkg.com/@tensorflow/tfjs"></script>
+    <script src="https://unpkg.com/@tensorflow/tfjs-automl"></script>
+    <script>
+         var config = {
+
+"projectId": "web27-c1172",
+"appId": "1:950474782903:web:5df3549cfdb91a6c1eb532",
+"databaseURL": "https://web27-c1172.firebaseio.com",
+"storageBucket": "web27-c1172.appspot.com",
+"locationId": "asia-southeast2",
+"apiKey": "AIzaSyD584Q-nkHvo6UaJNtsDfs49Wvj_ZlM7x0",
+"authDomain": "web27-c1172.firebaseapp.com",
+"messagingSenderId": "950474782903",
+"measurementId": "G-WBZJ423EBG"
+};
+firebase.initializeApp(config);
+    
+        async function myFunction() {
+            document.querySelector("#data tbody").innerHTML = ""
+            document.getElementById("load").style.display = "block";
+            document.getElementById("img2").style.display = "none";
+            const model = await tf.automl.loadImageClassification('./web_ai_last/web/model.json');
+            const image = document.getElementById('img');
+            let imgE = document.getElementById("image");
+            let fReader = new FileReader();
+            fReader.readAsDataURL(image.files[0]);
+            fReader.onloadend = async function (event) {
+                imgE.src = event.target.result;
+                
+                let predictions = await model.classify(imgE);
+                predictions = predictions.sort((a, b) => {
+                    return b.prob - a.prob
+                })
+                console.log(predictions);
+                // Show the resulting object on the page.
+                let html = ""
+                predictions.forEach((element, i) => {
+                    
+                    html += `
+                <tr>
+                    <td>${i + 1}</td>
+                    <td>${element.label}</td>
+                    <td>${element.prob*100}%</td>
+                </tr>
+                `
+            
+                });
+                document.getElementById("load").style.display = "none";
+                document.querySelector("#data tbody").innerHTML = html
+             
+            }
+
+        }
+    
+
+
+    
+
+        async function run() {
+            document.querySelector("#data tbody").innerHTML = ""
+            document.getElementById("load").style.display = "block";
+            document.getElementById("img2").style.display = "block";
+            let img_li = document.getElementById('img_link').value;
+            document.getElementById('img2').src =img_li;            
+            const model = await tf.automl.loadImageClassification('./web_ai_last/web/model.json');
+               
+                const image = document.getElementById('img2');
+                let predictions = await model.classify(image);
+              
+ 
+                predictions = predictions.sort((a, b) => {
+                    return b.prob - a.prob
+                })
+                console.log(predictions);
+                // Show the resulting object on the page.
+                let html = ""
+                predictions.forEach((element, i) => {
+                    if (i<5){
+                    html += `
+                <tr>
+                    <td>${i + 1}</td>
+                    <td>${element.label}</td>
+                    <td>${element.prob*100}%</td>
+                </tr>
+                `
+            }
+
+                });
+                document.getElementById("load").style.display = "none";
+                document.querySelector("#data tbody").innerHTML = html;
+                var remoteimageurl = img_li;
+var filename = "images/photo.jpg"
+
+fetch(remoteimageurl).then(res => {
+  return res.blob();
+}).then(blob => {
+    //uploading blob to firebase storage
+  firebase.storage().ref().child("img/"+img_li).put(blob).then(function(snapshot) {
+    return snapshot.ref.getDownloadURL()
+ }).then(url => {
+   console.log("Firebase storage image uploaded : ", url); 
+  }) 
+}).catch(error => {
+  console.error(error);
+});
+ 
+
+
+  
+}
+
+             
+
+            
+                 // Initialize Firebase
+ 
+
+  //-------------------------------------
+  async function uploadf() {
+      
+    
+  var fileButton = document.getElementById('img');
+  fileButton.addEventListener('change', function(e){
+    
+  var file = e.target.files[0];
+  var storageRef = firebase.storage().ref('img/'+file.name);
+  
+    storageRef.put(file);
+ 
+
+
+  
+})};  
+
+  
+  
+
+
+
+        
+    </script>
+    <center>
+       
+    <img id="img2" crossorigin="anonymous" style="width: 480px; height: 320px;display: none;" alt="image" src=""></img>
+</center>
+
+
+    </section>
+    <section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">At Your Service</h2>
+                    <hr class="my-4">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-lg-3 text-center">
+                    <div class="mx-auto service-box mt-5"><i class="fa fa-diamond fa-4x text-primary mb-3 sr-icons" data-aos="zoom-in" data-aos-duration="200" data-aos-once="true"></i>
+                        <h3 class="mb-3">Fastest</h3>
+                        <p class="text-muted mb-0">Our templates are updated regularly so they don't break.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 text-center">
+                    <div class="mx-auto service-box mt-5"><i class="fa fa-paper-plane fa-4x text-primary mb-3 sr-icons" data-aos="zoom-in" data-aos-duration="200" data-aos-delay="200" data-aos-once="true"></i>
+                        <h3 class="mb-3">Ready everytime</h3>
+                        <p class="text-muted mb-0">You can use this theme as is, or you can make changes!</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 text-center">
+                    <div class="mx-auto service-box mt-5"><i class="fa fa-newspaper-o fa-4x text-primary mb-3 sr-icons" data-aos="zoom-in" data-aos-duration="200" data-aos-delay="400" data-aos-once="true"></i>
+                        <h3 class="mb-3">Up to Date</h3>
+                        <p class="text-muted mb-0">We update dependencies to keep things fresh.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 text-center">
+                    <div class="mx-auto service-box mt-5"><i class="fa fa-heart fa-4x text-primary mb-3 sr-icons" data-aos="fade" data-aos-duration="200" data-aos-delay="600" data-aos-once="true"></i>
+                        <h3 class="mb-3">Made with Love</h3>
+                        <p class="text-muted mb-0">You have to make your websites with love these days!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="portfolio" class="p-0">
+        <div class="container-fluid p-0">
+            <div class="row no-gutters popup-gallery">
+                <div class="col-sm-6 col-lg-4"><a class="portfolio-box" href="assets/img/fullsize/1.jpg"><img class="img-fluid" src="assets/img/fullsize/1.jpg">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded"><span>Category</span></div>
+                                <div class="project-name"><span>Project Name</span></div>
+                            </div>
+                        </div>
+                    </a></div>
+                <div class="col-sm-6 col-lg-4"><a class="portfolio-box" href="assets/img/fullsize/2.jpg"><img class="img-fluid" src="assets/img/fullsize/2.jpg">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded"><span>Category</span></div>
+                                <div class="project-name"><span>Project Name</span></div>
+                            </div>
+                        </div>
+                    </a></div>
+                <div class="col-sm-6 col-lg-4"><a class="portfolio-box" href="assets/img/fullsize/31.jpg"><img class="img-fluid" src="assets/img/fullsize/31.jpg">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded"><span>Category</span></div>
+                                <div class="project-name"><span>Project Name</span></div>
+                            </div>
+                        </div>
+                    </a></div>
+                <div class="col-sm-6 col-lg-4"><a class="portfolio-box" href="assets/img/fullsize/41.jpg"><img class="img-fluid" src="assets/img/fullsize/41.jpg">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded"><span>Category</span></div>
+                                <div class="project-name"><span>Project Name</span></div>
+                            </div>
+                        </div>
+                    </a></div>
+                <div class="col-sm-6 col-lg-4"><a class="portfolio-box" href="assets/img/fullsize/51.jpg"><img class="img-fluid" src="assets/img/fullsize/51.jpg">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded"><span>Category</span></div>
+                                <div class="project-name"><span>Project Name</span></div>
+                            </div>
+                        </div>
+                    </a></div>
+                <div class="col-sm-6 col-lg-4"><a class="portfolio-box" href="assets/img/fullsize/6.jpg"><img class="img-fluid" src="assets/img/fullsize/6.jpg">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded"><span>Category</span></div>
+                                <div class="project-name"><span>Project Name</span></div>
+                            </div>
+                        </div>
+                    </a></div>
+            </div>
+        </div>
+    </section>
+    <!-- <section class="bg-dark text-white">
+        <div class="container text-center">
+            <h2 class="mb-4">Lorem Ipsum!</h2><a class="btn btn-light btn-xl sr-button" role="button" data-aos="zoom-in" data-aos-duration="400" data-aos-once="true" href="#">Download Now!</a>
+        </div>
+    </section> -->
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="section-heading">Let's Get In Touch!</h2>
+                    <hr class="my-4">
+                    <p class="mb-5">Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 ml-auto text-center"><i class="fa fa-phone fa-3x mb-3 sr-contact" data-aos="zoom-in" data-aos-duration="300" data-aos-once="true"></i>
+                    <p>123-456-6789</p>
+                </div>
+                <div class="col-lg-4 mr-auto text-center"><i class="fa fa-envelope-o fa-3x mb-3 sr-contact" data-aos="zoom-in" data-aos-duration="300" data-aos-delay="300" data-aos-once="true"></i>
+                    <p><a href="mailto:your-email@your-domain.com">email@example.com</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/creative1.js"></script>
+    <script src="./src/main.js"></script>
+    <script src="assets/js/scroll.js"></script>
+    
+    <footer>© Copyright <a href="https://www.facebook.com/profile.php?id=100029875350129"><i
+                class="fab fa-facebook"></i></a></footer>
+        
+</body>
+
+</html>

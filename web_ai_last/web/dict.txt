@@ -1,0 +1,10 @@
+dog
+rabbit
+pig
+moto
+car
+cat
+chicken
+wrist_watch
+tiger
+shoes
